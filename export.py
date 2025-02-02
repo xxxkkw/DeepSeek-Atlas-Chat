@@ -80,7 +80,7 @@ def export_qwen(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Export Qwen model to ONNX')
     parser.add_argument('-m', '--model_path', required=True, type=str, default="")
-    parser.add_argument('-o', '--out_dir', required=False, type=str, default="onnx_model_output")
+    parser.add_argument('-o', '--output_path', required=False, type=str, default="onnx_model_output")
     parser.add_argument('-d', '--device', required=False, type=str, choices=["mps", "cpu", "cuda"], default="cpu")
     parser.add_argument('-p', '--dtype', required=False, type=str, choices=["float32", "float16", "bfloat16"],
                         default="float32")
