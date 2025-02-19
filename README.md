@@ -103,6 +103,8 @@ protoc --version # 查看版本号
 随后部署算子
 ```bash
 cp matmul_integer_plugin.cc /usr/local/Ascend/ascend-toolkit/latest/tools/msopgen/template/custom_operator_sample/DSL/Onnx/framework/onnx_plugin/
+cp dynamic_quantize_linear_plugin.cc /usr/local/Ascend/ascend-toolkit/latest/tools/msopgen/template/custom_operator_sample/DSL/Onnx/framework/onnx_plugin/
+cp dequantize_linear_plugin.cc /usr/local/Ascend/ascend-toolkit/latest/tools/msopgen/template/custom_operator_sample/DSL/Onnx/framework/onnx_plugin/
 cd /usr/local/Ascend/ascend-toolkit/latest/tools/msopgen/template/custom_operator_sample/DSL/Onnx 
 ```
 打开`build.sh`，添加如下四个环境变量
