@@ -36,10 +36,10 @@ DeepSeek-Atlas-Chat/
 
 - **硬件**：昇腾 Atlas 200I DK A2，理论上也可以在其他310B设备运行
 - **软件**：
-  - Python 3.7 或更高版本
+  - Python 3.9 或更高版本
   - ONNX 1.10.0 或更高版本
-  - 昇腾 CANN 工具包（推荐版本 5.1.RC2）
-  - PyTorch 1.8.0 或更高版本（用于模型导出）
+  - 昇腾 CANN 工具包（推荐版本 8.0.0RC3）
+  - PyTorch 2.0.0 及以上
   - ONNX Runtime（可选，用于本地测试）
 
 ---
