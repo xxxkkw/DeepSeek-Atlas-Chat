@@ -82,7 +82,7 @@ ONNX 模型每秒处理 token 数量: 163.77 tokens/s
 ONNX 模型相较于 PyTorch 模型推理速度提升: 4.34 倍
 ```
 ### 5. 部署算子
-因为`cann`的算子清单中没有`MatMulIntegar`算子，所以就需要自己将算子补上，否则atc工具无法转换成om模型，后续的推理也无法正常运行   
+因为`cann`的算子清单中没有`MatMulIntegar`,`DynamicQuantizeLinear`,`DequantizeLinear`算子，所以就需要自己将算子补上，否则atc工具无法转换成om模型，后续的推理也无法正常运行   
 首先安装`protoc`，这是算子部署build.sh需要的
 ```bash
 # 安装protoc==1.13.0, 找一空闲目录下载
